@@ -1,63 +1,77 @@
+/*@keyframes animatedBackground {
+	from {background-size: 0 0;}
+	to {background-size: 100% 100%}
+}*/
 .container {
 	border-style: double;
 	border-color: black;
 	border-width: 10px;
 	padding: 20px;
 	background-color: white;
-	
-
 }
-
-body .container {
-	color: black;
-	background-image: url("/img/paper_bg.jpg");
+body .pic {
+	background-image: url("/img/code_bg_bin.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	font-family: 'Amatic SC', serif;
-	
-
+	/*animation: animatedBackground 1.5s linear;*/
 }
-
-
 .img-circle {
-	width: 140px;
-	height: 140px;
-	border-style: double;
-	border-color: black;
-	border-width: 8px;
-	position: relative;
-	left: 10%;
-	top: 100px;
-
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	left: 15%;
+	top: 200px;
 }
-
 .color {
 	background-color: papayawhip;
 }
-
 .img { 
 	color: lightblue;
-	background-color: papayawhip;
+	background-color: lightblue;
 	list-style-image: block;
 	width: 40px;
 	height: 40px;
 
 }
-
 .gmail {
 	position: relative;
 	left: 100px;
 }
-
 .link {
 	position: relative;
 	top: -50px;
 }
-
 .github {
 	position: relative;
 	top:-50px;
 	right: 50px;
+}
+.calculator-img {
+	position: relative;
+	left: 40%;
+	height: 200px;
+	width: 200px;
+}
+.splinter-img {
+	position: relative;
+	left: 40%;
+}
+.progress-bar {
+	border: 1px solid black;
+}
+.text {
+	color: ghostwhite;
+}
+#login {
+	position: absolute;
+	top: 55px;
+}
+.form-text {
+	color: black;
+}
+.contact {
+	border: solid 1px;
+	border-radius: 100%;
 }
 
 

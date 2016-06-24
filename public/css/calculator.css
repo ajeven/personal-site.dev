@@ -1,0 +1,118 @@
+h5 {
+	position: relative;
+	top: 11px;
+	text-align: center;
+	color: #FF6699;
+
+}
+#wrapper {
+	position: absolute;
+	width: 217px;
+	height: 395px;
+	padding: 0px;
+	padding-left: 7px;
+	padding-top: 0px;
+	left: 10%;
+	border: 3px solid black;
+	background-color: #303030;	
+}
+#divide {
+	position: relative;
+	top: -15px;
+	left: 0px;
+}
+#decimal {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+}
+#solve {
+	position: relative;
+	height: 50px;
+	width: 105px;
+	border: 3px groove #33FFFF;
+	background-color: ghostwhite;
+}
+.row1-calculator {
+	position: relative;
+	float: left;
+	top: 183px;
+	left: -2px;
+}
+.row2-calculator {
+	position: relative;
+	float: left;
+	top: 80px;
+	left: -2px;
+}
+.row3-calculator {
+	position: relative;
+	float: left;
+	top: -24px;
+	left: -2px;
+}
+.row4-calculator {
+	position: relative;
+	float: left;
+	top: 87px;
+	left: -3px;
+}
+.row5-calculator {
+	position: relative;
+	float: left;
+	top: -162px;
+	left: -2px;
+}			
+.btn-calculator {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	border: 3px groove #33FFFF;
+	background-color: ghostwhite;			
+}
+.operate {
+	background-color: #E1E1E1;
+}
+#leftScreen {
+	position: relative;
+	height: 40px;
+	width: 80px;
+	top: 20px;
+	border: 3px solid #006600;
+	padding: 5px;
+}
+#centerScreen {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	top: 20px;
+	border: 3px solid #006600;
+	padding: 5px;
+}
+#rightScreen {
+	position: relative;
+	height: 40px;
+	width: 80px;
+	top: 20px;
+	border: 3px solid #006600;
+	padding: 5px;
+}
+#back {
+	position: relative;
+	top: -15px;
+	height: 50px;
+	width: 50px;
+	border: 3px groove #33FFFF;
+}
+#clear {
+	position: relative;
+	top: -15px;
+	height: 50px;
+	width: 50px;
+	border: 3px groove #33FFFF;
+}
+#squared {
+	position: relative;
+	top: -15px;
+}

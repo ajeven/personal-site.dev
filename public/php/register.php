@@ -5,16 +5,16 @@
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/main.css">
 </head>
-			<body id="body-color" class="color"> 
+		<body class="color text"> 
 			<nav class="navbar navbar-default container">
 				<div class="container-fluid">
 					<div class="navbar-header">
-					  <a class="navbar-brand">Alan.example</a>
+					  <a class="navbar-brand"></a>
 					</div>
 						<ul class="nav navbar-nav">
-							<li><a href="/resume.html" target="_blank">Home</a></li>
-							<li><a href="/php/contact.php" target="_blank">Contact</a></li>
-							<li class="active"><a href="/php/register.php" target="_blank">Register</a></li> 
+							<li><a href="/resume.html">Home</a></li>
+							<li><a href="/portfolio.html">Portfolio</a></li>
+							<li class="active"><a href="/php/register.php">Register</a></li> 
 							<!--	<li><a href="/php/login.php" target="_blank">Login</a></li> --> 
 						</ul>
 							<button class="btn btn-default btn-sm col-md-1" id="login">
@@ -43,7 +43,7 @@
 					</form>
 				  </div>
 			</nav>
-	<div class="container">
+	<div class="container pic">
 		<div id="Sign-Up"> 
 			<fieldset style="width:30%">
 				<div class="lead text-uppercase">Registration Form</div> 
@@ -51,16 +51,16 @@
 						<tr> 
 							<form method="POST" action="connectivity-sign-up.php"> 
 								<td>Name</td>
-									<td> <input class="col-md-offset-" type="text" name="name"></td> </tr> <tr> 
+									<td> <input class="form-text" type="text" name="name"></td> </tr> <tr> 
 								<td>Email:</td>
-									<td> <input class="col-md-offset-" type="text" name="email"></td> </tr> <tr> 
+									<td> <input class="form-text" type="text" name="email"></td> </tr> <tr> 
 								<td>UserName:</td>
-									<td> <input class="col-md-offset-" type="text" name="user"></td> </tr> <tr> 
+									<td> <input class="form-text" type="text" name="user"></td> </tr> <tr> 
 								<td>Password:</td>
-									<td> <input class="col-md-offset-" type="password" name="pass"></td> </tr> <tr> 
+									<td> <input class="form-text" type="password" name="pass"></td> </tr> <tr> 
 								<td>Confirm Password: </td>
-									<td><input class="col-md-offset-" type="password" name="cpass"></td> </tr> <tr> <td>
-										<input id="button" type="submit" name="submit" value="Register"></td> 
+									<td><input class="form-text" type="password" name="cpass"></td> </tr> <tr> <td>
+										<input id="button" class="btn btn-success" type="submit" name="submit" value="Register"></td> 
 							</tr> 
 						</form> 
 					</table> 
