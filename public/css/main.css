@@ -1,7 +1,3 @@
-/*@keyframes animatedBackground {
-	from {background-size: 0 0;}
-	to {background-size: 100% 100%}
-}*/
 .container {
 	border-style: double;
 	border-color: black;
@@ -10,10 +6,9 @@
 	background-color: white;
 }
 body .pic {
-	background-image: url("/img/code_bg_bin.png");
+	background-image: url("/img/rain_code.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	/*animation: animatedBackground 1.5s linear;*/
 }
 .img-circle {
 	width: 160px;
@@ -23,7 +18,9 @@ body .pic {
 	top: 200px;
 }
 .color {
-	background-color: papayawhip;
+	background-image: url("/img/code_bg_bin.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .img { 
 	color: lightblue;
@@ -72,6 +69,57 @@ body .pic {
 .contact {
 	border: solid 1px;
 	border-radius: 100%;
+}
+@keyframes rain {
+	0% { top: 730px; opacity: .8; }
+	10% { top: 770px; opacity: 1; }
+	20% { top: 810px; opacity: .4; }
+	30% { top: 850px; opacity: .2; }
+	40% { top: 890px; opacity: .6; }
+	50% { top: 930px; opacity: .8; }
+	60% { top: 970px; opacity: 1; }
+	70% { top: 1010px; opacity: .4; }
+	80% { top: 1050px; opacity: .2; }
+	90% { top: 1090px; opacity: .6; }
+	95% { top: 1130px; opacity: .8; }
+	97% { top: 1170px; opacity: 1; }
+	98% { top: 1210px; opacity: .4; }
+	100% { top: 1240px; opacity: .2; }
+}
+.one {
+	position: absolute;
+	left: 45.5%;
+	opacity: .4;
+	animation: rain 1.6s linear infinite;
+	animation-dalay: 2s;
+}
+.zero {
+	position: absolute;
+	left: 47.5%;
+	opacity: .4;
+	animation: rain 2s linear infinite;
+	animation-delay: .5s;
+}
+.one1 {
+	position: absolute;
+	left: 49.5%;
+	opacity: .4;
+	animation: rain 3s linear infinite;
+	animation-delay: .1s;
+}
+.zero1 {
+	position: absolute;
+	left: 51.5%;
+	opacity: .4;
+	animation: rain 1s linear infinite;
+	animation-dealy: 2s;
+}
+.one2 {
+	position: absolute;
+	left: 53.5%;
+	opacity: .4;
+	animation: rain 4s linear infinite;
+	animation-delay: .0001s;
 }
 
 
