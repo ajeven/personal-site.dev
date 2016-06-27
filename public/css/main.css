@@ -4,11 +4,13 @@
 	border-width: 10px;
 	padding: 20px;
 	background-color: white;
+
 }
 body .pic {
 	background-image: url("/img/rain_code.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
 }
 .img-circle {
 	width: 160px;
@@ -18,9 +20,18 @@ body .pic {
 	top: 200px;
 }
 .color {
-	background-image: url("/img/code_bg_bin.png");
+	background-image: url("/img/code_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	opacity: .8;
+}
+div.pic.dont-show {
+	background-image: none;
+	background-color: black;
+	border-style: double;
+	border-color: ghostwhite;
+	border-width: 10px;
+	padding: 20px;
 }
 .img { 
 	color: lightblue;
@@ -53,8 +64,11 @@ body .pic {
 	position: relative;
 	left: 40%;
 }
-.progress-bar {
-	border: 1px solid black;
+.wmap-img {
+	position: relative;
+	left: 40%;
+	height: 200px;
+	width: 200px;
 }
 .text {
 	color: ghostwhite;
@@ -70,6 +84,21 @@ body .pic {
 	border: solid 1px;
 	border-radius: 100%;
 }
+.progress {
+	width: 200px;
+	position: relative;
+	left: 20%;
+	top: 40%;
+	border: 1px solid papayawhip;
+}
+.progress.splinter {
+	width: 200px;
+	position: relative;
+	left: 20%;
+	top: 80%;
+	border: 1px solid papayawhip;
+
+}
 @keyframes rain {
 	0% { top: 730px; opacity: .8; }
 	10% { top: 770px; opacity: 1; }
@@ -77,14 +106,15 @@ body .pic {
 	30% { top: 850px; opacity: .2; }
 	40% { top: 890px; opacity: .6; }
 	50% { top: 930px; opacity: .8; }
-	60% { top: 970px; opacity: 1; }
+	60% { top: 970px; }
 	70% { top: 1010px; opacity: .4; }
 	80% { top: 1050px; opacity: .2; }
 	90% { top: 1090px; opacity: .6; }
 	95% { top: 1130px; opacity: .8; }
-	97% { top: 1170px; opacity: 1; }
+	97% { top: 1170px; }
 	98% { top: 1210px; opacity: .4; }
-	100% { top: 1240px; opacity: .2; }
+	99% { top: 1240px; opacity: .2; }
+	100% { top: 1270px; opacity: .6; }
 }
 .one {
 	position: absolute;
@@ -92,6 +122,7 @@ body .pic {
 	opacity: .4;
 	animation: rain 1.6s linear infinite;
 	animation-dalay: 2s;
+	font-size: 150%;
 }
 .zero {
 	position: absolute;
@@ -99,6 +130,7 @@ body .pic {
 	opacity: .4;
 	animation: rain 2s linear infinite;
 	animation-delay: .5s;
+	font-size: 150%;
 }
 .one1 {
 	position: absolute;
@@ -106,6 +138,7 @@ body .pic {
 	opacity: .4;
 	animation: rain 3s linear infinite;
 	animation-delay: .1s;
+	font-size: 150%;
 }
 .zero1 {
 	position: absolute;
@@ -113,15 +146,53 @@ body .pic {
 	opacity: .4;
 	animation: rain 1s linear infinite;
 	animation-dealy: 2s;
+	font-size: 150%;
 }
 .one2 {
 	position: absolute;
 	left: 53.5%;
 	opacity: .4;
-	animation: rain 4s linear infinite;
-	animation-delay: .0001s;
+	animation: rain .8s linear infinite;
+	animation-delay: .01s;
+	font-size: 150%;
 }
-
-
-
-
+.subone {
+	position: absolute;
+	left: 46.5%;
+	opacity: .4;
+	animation: rain 2s linear infinite;
+	animation-dalay: 1s;
+	font-size: 150%;
+}
+.subzero {
+	position: absolute;
+	left: 48.5%;
+	opacity: .4;
+	animation: rain 1s linear infinite;
+	animation-delay: .3s;
+	font-size: 150%;
+}
+.subone1 {
+	position: absolute;
+	left: 50.5%;
+	opacity: .4;
+	animation: rain 2s linear infinite;
+	animation-delay: .1s;
+	font-size: 150%;
+}
+.subzero1 {
+	position: absolute;
+	left: 52.5%;
+	opacity: .4;
+	animation: rain 3s linear infinite;
+	animation-dealy: 2s;
+	font-size: 150%;
+}
+.subone2 {
+	position: absolute;
+	left: 54.5%;
+	opacity: .4;
+	animation: rain 1.4s linear infinite;
+	animation-delay: .01s;
+	font-size: 150%;
+}
