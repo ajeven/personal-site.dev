@@ -3,19 +3,20 @@
 	border-color: black;
 	border-width: 10px;
 	padding: 20px;
-	background-color: white;
-
+	background-image: url("/img/code_bg_bin.png");
 }
 body .pic {
 	background-image: url("/img/rain_code.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-
+}
+body {
+	padding-top: 20px;
 }
 .img-circle {
 	width: 160px;
 	height: 160px;
-	position: absolute;
+	position: relative;
 	left: 15%;
 	top: 200px;
 }
@@ -23,7 +24,7 @@ body .pic {
 	background-image: url("/img/code_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	opacity: .8;
+	opacity: .7;
 }
 div.pic.dont-show {
 	background-image: none;
@@ -39,7 +40,6 @@ div.pic.dont-show {
 	list-style-image: block;
 	width: 40px;
 	height: 40px;
-
 }
 .gmail {
 	position: relative;
@@ -84,37 +84,45 @@ div.pic.dont-show {
 	border: solid 1px;
 	border-radius: 100%;
 }
-.progress {
+div.progress {
 	width: 200px;
 	position: relative;
 	left: 20%;
 	top: 40%;
 	border: 1px solid papayawhip;
+	opacity: 1;
 }
-.progress.splinter {
+div.progress.splinter {
 	width: 200px;
 	position: relative;
 	left: 20%;
 	top: 80%;
 	border: 1px solid papayawhip;
-
+	opacity: 1;
+}
+.nothing {
+	background-color: transparent;
+	width: 100%;
+	height: 999px;
 }
 @keyframes rain {
-	0% { top: 730px; opacity: .8; }
-	10% { top: 770px; opacity: 1; }
-	20% { top: 810px; opacity: .4; }
-	30% { top: 850px; opacity: .2; }
-	40% { top: 890px; opacity: .6; }
-	50% { top: 930px; opacity: .8; }
-	60% { top: 970px; }
-	70% { top: 1010px; opacity: .4; }
-	80% { top: 1050px; opacity: .2; }
-	90% { top: 1090px; opacity: .6; }
-	95% { top: 1130px; opacity: .8; }
-	97% { top: 1170px; }
-	98% { top: 1210px; opacity: .4; }
-	99% { top: 1240px; opacity: .2; }
-	100% { top: 1270px; opacity: .6; }
+	0% { top: 790px; opacity: .8; }
+	5% { top: 830px; opacity: 1; }
+	10% { top: 890px; opacity: .4; }
+	15% { top: 870px; opacity: .2; }
+	20% { top: 910px; opacity: .6; }
+	25% { top: 950px; opacity: .8; }
+	30% { top: 990px; }
+	35% { top: 1030px; opacity: .4; }
+	40% { top: 1070px; opacity: .2; }
+	45% { top: 1110px; opacity: .6; }
+	50% { top: 1150px; opacity: .8; }
+	55% { top: 1190px; opacity: .4 }
+	60% { top: 1230px; opacity: .2; }
+	65% { top: 1270px; opacity: .4; }
+	70% { top: 1310px; opacity: .2; }
+	75% { top: 1350px; opacity: .6; }
+	80% { top: 1390px; opacity: .6; }
 }
 .one {
 	position: absolute;
@@ -152,7 +160,7 @@ div.pic.dont-show {
 	position: absolute;
 	left: 53.5%;
 	opacity: .4;
-	animation: rain .8s linear infinite;
+	animation: rain 1.2s linear infinite;
 	animation-delay: .01s;
 	font-size: 150%;
 }
