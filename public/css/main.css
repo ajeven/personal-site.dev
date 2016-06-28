@@ -120,9 +120,10 @@ div.progress.splinter {
 }
 /*animated section*/
 @keyframes rain {
-	0% { top: 790px; opacity: .8; }
-	5% { top: 85 0px; opacity: 1; }
-	10% { top: 890px; opacity: .4; }
+	0% { top: 730px; opacity: .2; }
+	5% { top: 770px; opacity: .4; }
+	7% { top: 830px; opacity: .6; }
+	10% { top: 810px; opacity: .4; }
 	15% { top: 870px; opacity: .2; }
 	20% { top: 910px; opacity: .6; }
 	25% { top: 950px; opacity: .8; }
@@ -135,8 +136,6 @@ div.progress.splinter {
 	60% { top: 1230px; opacity: .2; }
 	65% { top: 1270px; opacity: .4; }
 	70% { top: 1310px; opacity: .2; }
-/*	75% { top: 1350px; opacity: .6; }
-	80% { top: 1390px; opacity: .6; }*/
 }
 .one {
 	position: absolute;
