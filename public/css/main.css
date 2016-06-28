@@ -135,8 +135,8 @@ div.progress.splinter {
 	60% { top: 1230px; opacity: .2; }
 	65% { top: 1270px; opacity: .4; }
 	70% { top: 1310px; opacity: .2; }
-	75% { top: 1350px; opacity: .6; }
-	80% { top: 1390px; opacity: .6; }
+/*	75% { top: 1350px; opacity: .6; }
+	80% { top: 1390px; opacity: .6; }*/
 }
 .one {
 	position: absolute;
