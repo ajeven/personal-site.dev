@@ -11,13 +11,13 @@
 	</head>
 	<body class="color text">
 			<a id="top"></a>
-	<?= require_once 'templates.php'; ?>
+	<?php require_once 'templates.php'; ?>
 		<div class="container pic dont-show">
 			<h1 class="text-center name-header">Projects</h1>
 			<div>
 				<h2 class="name-header">Calculator</h2>
 					<p>This is a calculator I made with HTML CSS & Javascript.</p>
-						<a href="/calculator.html">
+						<a href="/calculator.php">
 							<img class="calculator-img" src="/img/calculator_img.png"> 
 						</a>
 					
@@ -33,7 +33,7 @@
 			<div>
 				<h2 class="name-header">Splinter Says</h2>
 					<p>This is a version of Simple Simon I made with HTML CSS & Javascript & JQuery.</p>
-						<a class="splinter-img" href="/simon.html">
+						<a class="splinter-img" href="/simon.php">
 							<img src="/img/splinter_img.png"> 
 						</a>
 						
@@ -50,11 +50,11 @@
 				<h2 class="name-header">Weather Map</h2>
 					<p>Need to know the three day forcast for somewhere in the world?
 						Use this weather map I made with some APIs from google & openweathermap.</p>
-						<a href="/weather_map.html">
+						<a href="/weather_map.php">
 							<img class="wmap-img" src="/img/wmap_img.png"> 
 						</a>
 			</div>
-			<a href="#top">Back to top</a>
+			<a href="#top" class="back-top">Back to top</a>
 		</div>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->

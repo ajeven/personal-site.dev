@@ -11,12 +11,8 @@
 </head>
 <body class="color text">
 	<a id="top"></a>
-	<?= require_once 'templates.php'; ?>	
-	<div class="container pic">
-		<div id="objective">
-			<h5><p><em>OBJECTIVE: Obtain a software development position that will utilize my problem solving skills, creativity and coding knowledge to create applications based on company or client requests.</em></p></h5>
-		</div>	
-		<img src="/img/raphael.png" alt="Profile Photo" class="img-circle resume">		
+	<?php require_once 'templates.php'; ?>	
+	<div class="container pic">		
 			<h1 class="text-center name-header">Alan Even</h1>
 				<h4 class="text-center">Contact</h4>
 					<p class="text-center"><a class="email" href="mailto:ajeven87@gmail.com">
@@ -53,18 +49,6 @@
 							</div>
 						</div>
 					</div>
-						<!-- animated section -->
-							<span class="one">1</span>
-								<span class="zero">0</span>
-							<span class="one1">1</span>
-								<span class="zero1">0</span>
-							<span class="one2">1</span>
-							<span class="subone">1</span>
-								<span class="subzero">0</span>
-							<span class="subone1">1</span>
-								<span class="subzero1">0</span>
-							<span class="subone2">1</span>
-						<!-- ################ -->
 	<h2 class="text-center">Education</h2>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-1">
@@ -90,7 +74,7 @@
 							<p class="col-md-offset-1">Graduated 2006</p>
 			</div>				
 		</div>
-		<a href="#top">Back to top</a>
+		<a href="#top" class="back-top">Back to top</a>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->

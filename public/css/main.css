@@ -1,219 +1,91 @@
-.container {
-	border-style: double;
-	border-color: ghostwhite;
-	border-width: 10px;
-	padding: 20px;
-	background-image: url("/img/code_bg_bin.png");
-	opacity: .8;
-}
-#objective {
-	padding: 2px;
-}
-body .pic {
-	background-image: url("/img/rain_code.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-body {
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-.img-circle {
-	border-radius: 100%;
-	width: 160px;
-	height: 160px;
-	position: absolute;
-	left: 20%;
-	top: 35%;
-}
-.color {
-	background-image: url("/img/cloud_sky.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	opacity: .7;
-}
-div.pic.dont-show {
-	background-image: none;
-	background-color: grey;
-	border-style: double;
-	border-color: ghostwhite;
-	border-width: 10px;
-	padding: 20px;
-}
-.img { 
-	color: lightblue;
-	background-color: lightblue;
-	list-style-image: block;
-	width: 40px;
-	height: 40px;
-}
-.gmail {
-	position: static;
-	left: 100px;
-}
-.link {
-	position: static;
-	top: -50px;
-}
-.github {
-	position: static;
-	top:-50px;
-	right: 50px;
-}
-.calculator-img {
-	position: relative;
-	left: 40%;
-	height: 200px;
-	width: 200px;
-}
-.splinter-img {
-	position: relative;
-	left: 40%;
-}
-.wmap-img {
-	position: relative;
-	left: 40%;
-	height: 200px;
-	width: 200px;
-}
-.text {
-	color: black;
-}
-#login {
-	position: absolute;
-	top: 55px;
-}
-.form-text {
-	color: black;
-}
-.contact {
-	border: solid 1px;
-	border-radius: 100%;
-}
-div.progress {
-	width: 200px;
-	position: relative;
-	left: 20%;
-	top: 40%;
-	border: 1px solid papayawhip;
-	opacity: 1;
-}
-div.progress.splinter {
-	width: 200px;
-	position: relative;
-	left: 20%;
-	top: 80%;
-	border: 1px solid papayawhip;
-	opacity: 1;
-}
-.nothing {
-	background-color: transparent;
-	width: 100%;
-	height: 999px;
-}
-.location {
-	position: relative;
-	float: right;
-	font-weight: bolder;
-	color: black;
+                                /*NAVBAR*/
+.navbar-brand { position: relative; z-index: 2; }
 
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
 }
-/*animated section*/
-@keyframes rain {
-	0% { top: 730px; opacity: .2; }
-	5% { top: 770px; opacity: .4; }
-	7% { top: 830px; opacity: .6; }
-	10% { top: 810px; opacity: .4; }
-	15% { top: 870px; opacity: .2; }
-	20% { top: 910px; opacity: .6; }
-	25% { top: 950px; opacity: .8; }
-	30% { top: 990px; }
-	35% { top: 1030px; opacity: .4; }
-	40% { top: 1070px; opacity: .2; }
-	45% { top: 1110px; opacity: .6; }
-	50% { top: 1150px; opacity: .8; }
-	55% { top: 1190px; opacity: .4 }
-	60% { top: 1230px; opacity: .2; }
-	65% { top: 1270px; opacity: .4; }
-	70% { top: 1310px; opacity: .2; }
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
 }
-.one {
-	position: absolute;
-	left: 45.5%;
-	opacity: .4;
-	animation: rain 1.6s linear infinite;
-	animation-dalay: 2s;
-	font-size: 150%;
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
 }
-.zero {
-	position: absolute;
-	left: 47.5%;
-	opacity: .4;
-	animation: rain 2s linear infinite;
-	animation-delay: .5s;
-	font-size: 150%;
+
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+   
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+    
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    } 
 }
-.one1 {
-	position: absolute;
-	left: 49.5%;
-	opacity: .4;
-	animation: rain 3s linear infinite;
-	animation-delay: .1s;
-	font-size: 150%;
+                                    /*NAVBAR*/
+body {
+    padding: 10px;
 }
-.zero1 {
-	position: absolute;
-	left: 51.5%;
-	opacity: .4;
-	animation: rain 1s linear infinite;
-	animation-dealy: 2s;
-	font-size: 150%;
+.wrapper {
+    border: 2px solid black;
+    padding: 10px;
 }
-.one2 {
-	position: absolute;
-	left: 53.5%;
-	opacity: .4;
-	animation: rain 1.2s linear infinite;
-	animation-delay: .01s;
-	font-size: 150%;
+a:hover {
+    color: black;
 }
-.subone {
-	position: absolute;
-	left: 46.5%;
-	opacity: .4;
-	animation: rain 2s linear infinite;
-	animation-dalay: 1s;
-	font-size: 150%;
+a:active {
+    color: green;
 }
-.subzero {
-	position: absolute;
-	left: 48.5%;
-	opacity: .4;
-	animation: rain 1s linear infinite;
-	animation-delay: .3s;
-	font-size: 150%;
+.img-responsive {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 1px solid ghostwhite;
 }
-.subone1 {
-	position: absolute;
-	left: 50.5%;
-	opacity: .4;
-	animation: rain 2s linear infinite;
-	animation-delay: .1s;
-	font-size: 150%;
+.intro-p {
+    width: 300px;
+    margin: 0 auto;
 }
-.subzero1 {
-	position: absolute;
-	left: 52.5%;
-	opacity: .4;
-	animation: rain 3s linear infinite;
-	animation-dealy: 2s;
-	font-size: 150%;
-}
-.subone2 {
-	position: absolute;
-	left: 54.5%;
-	opacity: .4;
-	animation: rain 1.4s linear infinite;
-	animation-delay: .01s;
-	font-size: 150%;
+.back-top {
+    display: block;
+    width: 100px;
+    margin: 0 auto;   
 }

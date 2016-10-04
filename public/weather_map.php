@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
+	<?php require_once 'templates.php'; ?>
 	<h1>Weather Map</h1>
 	<h5 id="city"></h5>
 	<div id="container-fluid">
