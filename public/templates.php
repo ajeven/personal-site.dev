@@ -15,6 +15,7 @@ echo  '<nav class="navbar navbar-default">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="resume.php">Resume</a></li>
             <li><a href="portfolio.php">Projects</a></li>
+            <li><a href="solitaire.php">Solitaire</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
