@@ -6,13 +6,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<script src="/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 	<title>Resume</title>
 </head>
 <body class="color text">
 	<a id="top"></a>
-	<?php require_once 'templates.php'; ?>	
-	<div class="container pic">		
+	<?php require_once 'templates.php'; ?>
+	<div class="wrapper">	
+	<div class="container">		
 			<h1 class="text-center name-header">Alan Even</h1>
 				<h4 class="text-center">Contact</h4>
 					<p class="text-center"><a class="email" href="mailto:ajeven87@gmail.com">
@@ -26,13 +27,26 @@
 							<span class="sr-only">Contact Information Github</span>	
 				<h2 class="text-center">Work Experience</h2>
 					<div class="row">
+						<div class="row">
+						<div class="col-md-8 col-md-offset-1">
+							<h3>
+								<span><u>Argyle Security</u></span> <small class="location"><u>San Antonio, Tx</u></small>
+							</h3>
+								<p class="col-md-offset-1">
+									HMI Programmer, Take layouts built by engineer in CAD and apply it to touch screen interface for customer use. 
+								</p>
+							<div>
+								<p class="col-md-offset-1">Oct 2016 - Current</p>
+							</div>
+						</div>
+					</div>
 						<div class="col-md-8 col-md-offset-1">
 							<h3>
 								<span><u>Texstar Enterprises</u></span> <small class="location"><u>Selma, Tx</u></small>
 							</h3>
 								<p class="col-md-offset-1">Preform aerial telecomunications construction and repair including coax, copper, and optical cable via bucket truck and hooks to climb telephone poles</p>
 							<div>
-								<p class="col-md-offset-1">September 2013-April 2016</p>
+								<p class="col-md-offset-1">September 2013 - April 2016</p>
 							</div>
 						</div>
 					</div>
@@ -45,7 +59,7 @@
 									Managed day to day operations of store. Responsabilities included hiring, daily books,merchandise ordering, and general store maintenance.
 								</p>
 							<div>
-								<p class="col-md-offset-1">January 2010-August 2013</p>
+								<p class="col-md-offset-1">January 2010 - August 2013</p>
 							</div>
 						</div>
 					</div>
@@ -56,7 +70,7 @@
 					<span><u>Codeup Bootcamp</u></span> <small class="location"><u>San Antonio, Tx</u></small>
 				</h3>
 						<p class="col-md-offset-1"><a href="http://codeup.com" target="_blank">Codeup</a></p>
-							<p class="col-md-offset-1">Current</p>
+							<p class="col-md-offset-1">Graduated 2016</p>
 				<h3>
 					<span><u>Career Point College</u></span> <small class="location"><u>San Antonio, Tx</u></small>
 				</h3>
@@ -74,10 +88,10 @@
 							<p class="col-md-offset-1">Graduated 2006</p>
 			</div>				
 		</div>
+		</div>
 		<a href="#top" class="back-top">Back to top</a>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
